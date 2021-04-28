@@ -32,6 +32,15 @@ const Form = (props) => {
 	return (
 		<div className="container">
 
+
+
+			<form onSubmit={submitMemory}>
+			
+
+
+
+
+
 			<div className="form-group">
 				Title: 
 				<input type="text" name="memory_name" className="form-control" onChange={(e)=>{
@@ -61,16 +70,16 @@ const Form = (props) => {
 			</div>
 
 			<div className="form-group">
-				Description:
-				<textarea className="form-control" name="importance" rows="3" onChange={(e)=>{
+				importance:
+				<input type="text" className="form-control" name="importance" rows="3" onChange={(e)=>{
 						setImportance(e.target.value);
 					}}/>
 			</div> 
 
 
-			<button type="button" className="btn btn-primary" onClick={submitMemory}> submit </button>
+			<button type="submit" className="btn btn-primary"> submit </button>
 
-
+			</form>
 			</div>
 			)
 }
