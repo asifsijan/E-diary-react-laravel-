@@ -1,6 +1,6 @@
 import Diary from './Diary';
-import Form from './Form';
-
+// import Form from './Form';
+import Submit from './Submit';
 
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
             <div class="d-flex justify-content-center pb-5">
               <h1 class="font-weight-light">Create new memories</h1>  
             </div>
-            <Form />
+            <Submit />
 
           </div>
         </div>

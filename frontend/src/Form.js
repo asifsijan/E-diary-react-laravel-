@@ -1,9 +1,9 @@
 import React,{useState, useEffect} from 'react';
-import Axios from 'axios';
+import axios from 'axios';
 
 
 
-const Form = (props) => {
+const Form = () => {
 
 	const [memoryName, setMemoryName] = useState("");
 	const [details, setDetails] = useState("");
@@ -14,7 +14,7 @@ const Form = (props) => {
 	const submitMemory = () => {
 
 
-		Axios.post('http://localhost:8000/api/diaries', {
+		axios.post("http://localhost:8000/api/diaries", {
 			memory_name: memoryName,
 			person_name: personName,
 			details: details,
@@ -34,7 +34,7 @@ const Form = (props) => {
 
 
 
-			<form onSubmit={submitMemory}>
+			<form method="Post" onSubmit={submitMemory}>
 			
 
 

@@ -29,16 +29,6 @@ class DiaryController extends Controller
    */
   public function store(Request $request)
   {
-      // $diary = new Diary();
-      // $diary->memory_name = $request->memory_name;
-      // $diary->memory_name = $request->memory_name;
-      // $diary->memory_name = $request->memory_name;
-      // $diary->memory_name = $request->memory_name;
-      // $diary->memory_name = $request->memory_name;
-      //
-
-      //
-      // $diary->save();
 
       return Diary::create($request->all());
   }
