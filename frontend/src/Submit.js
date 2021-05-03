@@ -79,7 +79,7 @@ const Submit = () => {
                         <input value={input.doe} onChange={handleOnchangeBlog} autoComplete="off" name="doe" type="Date" className="form-control" placeholder="Date" />
                     </div>
                     <div className="form-group my_input_form-input">
-                        <input value={input.importance} onChange={handleOnchangeBlog} autoComplete="off" name="importance" type="text" className="form-control" placeholder="Image 2 Link" />
+                        <input value={input.importance} onChange={handleOnchangeBlog} autoComplete="off" name="importance" type="text" className="form-control" placeholder="importance" />
                     </div>
 
 
